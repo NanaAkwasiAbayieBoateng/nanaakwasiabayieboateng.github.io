@@ -439,7 +439,7 @@ torch.__version__
 from dotenv import load_dotenv
 import os
 
-load_dotenv("C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/huggingface_api/.env")  # take environment variables from .env.
+load_dotenv("C:/LLM/huggingface_api/.env")  # take environment variables from .env.
 
 # Code of your application, which uses environment variables (e.g. from `os.environ` or
 # `os.getenv`) as if they came from the actual environment.
@@ -636,7 +636,7 @@ from llama_cpp import Llama
 from llama_cpp import Llama
 
 llm = Llama(
-      model_path= r"C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/llm_local_machine/llama-7b.Q2_K.gguf",
+      model_path= r"C:/Users/LLM/llm_local_machine/llama-7b.Q2_K.gguf",
       # n_gpu_layers=-1, # Uncomment to use GPU acceleration
       # seed=1337, # Uncomment to set a specific seed
       # n_ctx=2048, # Uncomment to increase the context window
@@ -650,7 +650,7 @@ output = llm(
 
 ```
 
-    llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/llm_local_machine/llama-7b.Q2_K.gguf (version GGUF V2)
+    llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from C:/LLM/llm_local_machine/llama-7b.Q2_K.gguf (version GGUF V2)
     llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
     llama_model_loader: - kv   0:                       general.architecture str              = llama
     llama_model_loader: - kv   1:                               general.name str              = meta-llama-7b
@@ -767,7 +767,7 @@ print(output)
 print(output['choices'][0]['text']) #
 ```
 
-    {'id': 'cmpl-0dda63f6-b115-4a6b-b985-94fa72a72b3a', 'object': 'text_completion', 'created': 1736140215, 'model': 'C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/llm_local_machine/llama-7b.Q2_K.gguf', 'choices': [{'text': 'Q: Name the planets in the solar system? A: 1 Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune Pluto ', 'index': 0, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 15, 'completion_tokens': 21, 'total_tokens': 36}}
+    {'id': 'cmpl-0dda63f6-b115-4a6b-b985-94fa72a72b3a', 'object': 'text_completion', 'created': 1736140215, 'model': 'C:/LLM/llm_local_machine/llama-7b.Q2_K.gguf', 'choices': [{'text': 'Q: Name the planets in the solar system? A: 1 Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune Pluto ', 'index': 0, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 15, 'completion_tokens': 21, 'total_tokens': 36}}
     Q: Name the planets in the solar system? A: 1 Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune Pluto 
     
 
@@ -796,7 +796,7 @@ output = llm(
 print(output)
 ```
 
-    llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from C:\Users\nboateng\.cache\huggingface\hub\models--TheBloke--Llama-2-7B-Chat-GGUF\snapshots\191239b3e26b2882fb562ffccdd1cf0f65402adb\.\llama-2-7b-chat.Q2_K.gguf (version GGUF V2)
+    llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from C:\Users\.cache\huggingface\hub\models--TheBloke--Llama-2-7B-Chat-GGUF\snapshots\191239b3e26b2882fb562ffccdd1cf0f65402adb\.\llama-2-7b-chat.Q2_K.gguf (version GGUF V2)
     llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
     llama_model_loader: - kv   0:                       general.architecture str              = llama
     llama_model_loader: - kv   1:                               general.name str              = LLaMA v2
@@ -903,7 +903,7 @@ print(output)
     llama_perf_context_print:       total time =  123627.57 ms /   511 tokens
     
 
-    {'id': 'cmpl-4406bd4b-eb98-4fe1-a7a8-e92b3e670a59', 'object': 'text_completion', 'created': 1736140654, 'model': 'C:\\Users\\nboateng\\.cache\\huggingface\\hub\\models--TheBloke--Llama-2-7B-Chat-GGUF\\snapshots\\191239b3e26b2882fb562ffccdd1cf0f65402adb\\.\\llama-2-7b-chat.Q2_K.gguf', 'choices': [{'text': 'What was the impact of the Industrial Revolution on global trade? The Industrial Revolution, which began in Britain in the late 18th century and spread to other parts of the world in the 19th century, had a profound impact on global trade. Hinweis: Your answer should be in the form of a well-structured essay, with an introduction, body, and conclusion.\nIntroduction:\nThe Industrial Revolution was a period of rapid technological and economic change that transformed the way goods were produced and traded around the world. One of the key consequences of this revolution was the expansion of global trade, as new transportation networks, communication systems, and manufacturing technologies facilitated the exchange of goods between nations. In this essay, we will explore the impact of the Industrial Revolution on global trade, including the ways in which it accelerated trade, created new markets, and facilitated the growth of international trade.\nBody:\n1. Accelerated trade: The Industrial Revolution introduced new transportation networks, such as railways, steamships, and canals, which significantly reduced transportation costs and accelerated the exchange of goods between nations. For example, the construction of the Suez Canal in 1869 connected the Mediterranean Sea to the Red Sea, allowing ships to travel between Europe and Asia without having to circumnavigate Africa. This reduced the journey time by several months and opened up new trade routes, such as the passage of Indian and Chinese cotton to Europe.\n2. Created new markets: The Industrial Revolution also created new markets for goods that were previously produced locally or regionally. For example, the introduction of the factory system allowed for the mass production of goods, such as textiles, which previously required skilled artisans to create individually. This mass production made these goods more affordable and accessible to a wider range of people, including those in other countries. As a result, international trade in these goods expanded, creating new markets for producers.\n3. Facilitated the growth of international trade: The Industrial Revolution also facilitated the growth of international trade by reducing trade barriers and increasing economic interdependence between nations. For example, the establishment of the General Agreement on Tariffs and Trade (GATT) in 1947 and the World Trade Organization (WTO) in 1995 aimed to reduce trade barriers', 'index': 0, 'logprobs': None, 'finish_reason': 'length'}], 'usage': {'prompt_tokens': 14, 'completion_tokens': 498, 'total_tokens': 512}}
+    {'id': 'cmpl-4406bd4b-eb98-4fe1-a7a8-e92b3e670a59', 'object': 'text_completion', 'created': 1736140654, 'model': 'C:\\Users\\.cache\\huggingface\\hub\\models--TheBloke--Llama-2-7B-Chat-GGUF\\snapshots\\191239b3e26b2882fb562ffccdd1cf0f65402adb\\.\\llama-2-7b-chat.Q2_K.gguf', 'choices': [{'text': 'What was the impact of the Industrial Revolution on global trade? The Industrial Revolution, which began in Britain in the late 18th century and spread to other parts of the world in the 19th century, had a profound impact on global trade. Hinweis: Your answer should be in the form of a well-structured essay, with an introduction, body, and conclusion.\nIntroduction:\nThe Industrial Revolution was a period of rapid technological and economic change that transformed the way goods were produced and traded around the world. One of the key consequences of this revolution was the expansion of global trade, as new transportation networks, communication systems, and manufacturing technologies facilitated the exchange of goods between nations. In this essay, we will explore the impact of the Industrial Revolution on global trade, including the ways in which it accelerated trade, created new markets, and facilitated the growth of international trade.\nBody:\n1. Accelerated trade: The Industrial Revolution introduced new transportation networks, such as railways, steamships, and canals, which significantly reduced transportation costs and accelerated the exchange of goods between nations. For example, the construction of the Suez Canal in 1869 connected the Mediterranean Sea to the Red Sea, allowing ships to travel between Europe and Asia without having to circumnavigate Africa. This reduced the journey time by several months and opened up new trade routes, such as the passage of Indian and Chinese cotton to Europe.\n2. Created new markets: The Industrial Revolution also created new markets for goods that were previously produced locally or regionally. For example, the introduction of the factory system allowed for the mass production of goods, such as textiles, which previously required skilled artisans to create individually. This mass production made these goods more affordable and accessible to a wider range of people, including those in other countries. As a result, international trade in these goods expanded, creating new markets for producers.\n3. Facilitated the growth of international trade: The Industrial Revolution also facilitated the growth of international trade by reducing trade barriers and increasing economic interdependence between nations. For example, the establishment of the General Agreement on Tariffs and Trade (GATT) in 1947 and the World Trade Organization (WTO) in 1995 aimed to reduce trade barriers', 'index': 0, 'logprobs': None, 'finish_reason': 'length'}], 'usage': {'prompt_tokens': 14, 'completion_tokens': 498, 'total_tokens': 512}}
     
 
 
@@ -928,7 +928,7 @@ Text embeddings  can be generated by using the  `create_embedding` or `embed`.
 ```python
 import llama_cpp
 
-llm = llama_cpp.Llama(model_path= r"C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/llm_local_machine/llama-7b.Q2_K.gguf", 
+llm = llama_cpp.Llama(model_path= r"C:/Users/LLM/llm_local_machine/llama-7b.Q2_K.gguf", 
                       embedding=True)
 
 embeddings = llm.create_embedding("Hello, world!")
@@ -938,7 +938,7 @@ embeddings = llm.create_embedding("Hello, world!")
 embeddings = llm.create_embedding(["Hello, world!", "Goodbye, world!"])
 ```
 
-    llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/llm_local_machine/llama-7b.Q2_K.gguf (version GGUF V2)
+    llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from C:/Users/LLM/llm_local_machine/llama-7b.Q2_K.gguf (version GGUF V2)
     llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
     llama_model_loader: - kv   0:                       general.architecture str              = llama
     llama_model_loader: - kv   1:                               general.name str              = meta-llama-7b
@@ -1081,152 +1081,11 @@ cmake --build build -j --target llama-cli
 %pip install llama-index
 ```
 
-    Requirement already satisfied: llama-index-embeddings-huggingface in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (0.5.0)
-    Requirement already satisfied: huggingface-hub>=0.19.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (0.27.0)
-    Requirement already satisfied: llama-index-core<0.13.0,>=0.12.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-embeddings-huggingface) (0.12.10.post1)
-    Requirement already satisfied: sentence-transformers>=2.6.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-embeddings-huggingface) (3.3.1)
-    Requirement already satisfied: filelock in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (3.16.1)
-    Requirement already satisfied: fsspec>=2023.5.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (2024.6.1)
-    Requirement already satisfied: packaging>=20.9 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (24.1)
-    Requirement already satisfied: pyyaml>=5.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (6.0.1)
-    Requirement already satisfied: requests in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (2.32.3)
-    Requirement already satisfied: tqdm>=4.42.1 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (4.66.5)
-    Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (4.12.2)
-    Requirement already satisfied: aiohttp in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (3.11.11)
-    Requirement already satisfied: SQLAlchemy>=1.4.49 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from SQLAlchemy[asyncio]>=1.4.49->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (2.0.36)
-    Requirement already satisfied: dataclasses-json in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (0.6.7)
-    Requirement already satisfied: deprecated>=1.2.9.3 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.2.15)
-    Requirement already satisfied: dirtyjson<2.0.0,>=1.0.8 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.0.8)
-    Requirement already satisfied: filetype<2.0.0,>=1.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.2.0)
-    Requirement already satisfied: httpx in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (0.27.0)
-    Requirement already satisfied: nest-asyncio<2.0.0,>=1.5.8 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.6.0)
-    Requirement already satisfied: networkx>=3.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (3.4.2)
-    Requirement already satisfied: nltk>3.8.1 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (3.9.1)
-    Requirement already satisfied: numpy in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.26.4)
-    Requirement already satisfied: pillow>=9.0.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (10.4.0)
-    Requirement already satisfied: pydantic>=2.8.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (2.10.4)
-    Requirement already satisfied: tenacity!=8.4.0,<10.0.0,>=8.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (8.2.3)
-    Requirement already satisfied: tiktoken>=0.3.3 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (0.7.0)
-    Requirement already satisfied: typing-inspect>=0.8.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (0.9.0)
-    Requirement already satisfied: wrapt in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.17.0)
-    Requirement already satisfied: transformers<5.0.0,>=4.41.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (4.47.1)
-    Requirement already satisfied: torch>=1.11.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (2.5.1)
-    Requirement already satisfied: scikit-learn in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (1.5.1)
-    Requirement already satisfied: scipy in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (1.13.1)
-    Requirement already satisfied: aiohappyeyeballs>=2.3.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (2.4.4)
-    Requirement already satisfied: aiosignal>=1.1.2 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (1.3.2)
-    Requirement already satisfied: attrs>=17.3.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (23.2.0)
-    Requirement already satisfied: frozenlist>=1.1.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (1.5.0)
-    Requirement already satisfied: multidict<7.0,>=4.5 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from aiohttp->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (6.0.4)
-    Requirement already satisfied: propcache>=0.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from aiohttp->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (0.2.1)
-    Requirement already satisfied: yarl<2.0,>=1.17.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (1.18.3)
-    Requirement already satisfied: click in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from nltk>3.8.1->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (8.1.7)
-    Requirement already satisfied: joblib in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from nltk>3.8.1->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.4.2)
-    Requirement already satisfied: regex>=2021.8.3 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from nltk>3.8.1->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (2024.5.15)
-    Requirement already satisfied: annotated-types>=0.6.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from pydantic>=2.8.0->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (0.6.0)
-    Requirement already satisfied: pydantic-core==2.27.2 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from pydantic>=2.8.0->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (2.27.2)
-    Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from requests->huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (3.3.2)
-    Requirement already satisfied: idna<4,>=2.5 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from requests->huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (3.6)
-    Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from requests->huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (2.2.1)
-    Requirement already satisfied: certifi>=2017.4.17 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from requests->huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (2024.12.14)
-    Requirement already satisfied: greenlet!=0.4.17 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from SQLAlchemy>=1.4.49->SQLAlchemy[asyncio]>=1.4.49->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (3.1.1)
-    Requirement already satisfied: jinja2 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from torch>=1.11.0->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (3.1.5)
-    Requirement already satisfied: setuptools in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from torch>=1.11.0->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (75.6.0)
-    Requirement already satisfied: sympy==1.13.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from torch>=1.11.0->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (1.13.1)
-    Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from sympy==1.13.1->torch>=1.11.0->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (1.3.0)
-    Requirement already satisfied: colorama in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from tqdm>=4.42.1->huggingface-hub>=0.19.0->huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (0.4.6)
-    Requirement already satisfied: tokenizers<0.22,>=0.21 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (0.21.0)
-    Requirement already satisfied: safetensors>=0.4.1 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (0.5.0)
-    Requirement already satisfied: mypy-extensions>=0.3.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from typing-inspect>=0.8.0->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.0.0)
-    Requirement already satisfied: marshmallow<4.0.0,>=3.18.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from dataclasses-json->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (3.25.1)
-    Requirement already satisfied: anyio in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (4.3.0)
-    Requirement already satisfied: httpcore==1.* in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.0.5)
-    Requirement already satisfied: sniffio in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (1.3.1)
-    Requirement already satisfied: h11<0.15,>=0.13 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpcore==1.*->httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-embeddings-huggingface) (0.14.0)
-    Requirement already satisfied: threadpoolctl>=3.1.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from scikit-learn->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (3.5.0)
-    Requirement already satisfied: MarkupSafe>=2.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from jinja2->torch>=1.11.0->sentence-transformers>=2.6.1->llama-index-embeddings-huggingface) (3.0.2)
-    Note: you may need to restart the kernel to use updated packages.
-    Requirement already satisfied: llama-index-llms-llama-cpp in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (0.3.0)
-    Requirement already satisfied: llama-cpp-python<0.3.0,>=0.2.32 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-llms-llama-cpp) (0.2.90)
-    Requirement already satisfied: llama-index-core<0.13.0,>=0.12.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-llms-llama-cpp) (0.12.10.post1)
-    Requirement already satisfied: typing-extensions>=4.5.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-cpp-python<0.3.0,>=0.2.32->llama-index-llms-llama-cpp) (4.12.2)
-    Requirement already satisfied: numpy>=1.20.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-cpp-python<0.3.0,>=0.2.32->llama-index-llms-llama-cpp) (1.26.4)
-    Requirement already satisfied: diskcache>=5.6.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-cpp-python<0.3.0,>=0.2.32->llama-index-llms-llama-cpp) (5.6.3)
-    Requirement already satisfied: jinja2>=2.11.3 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-cpp-python<0.3.0,>=0.2.32->llama-index-llms-llama-cpp) (3.1.5)
-    Requirement already satisfied: PyYAML>=6.0.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (6.0.1)
-    Requirement already satisfied: SQLAlchemy>=1.4.49 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from SQLAlchemy[asyncio]>=1.4.49->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2.0.36)
-    Requirement already satisfied: aiohttp<4.0.0,>=3.8.6 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (3.11.11)
-    Requirement already satisfied: dataclasses-json in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.6.7)
-    Requirement already satisfied: deprecated>=1.2.9.3 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.2.15)
-    Requirement already satisfied: dirtyjson<2.0.0,>=1.0.8 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.0.8)
-    Requirement already satisfied: filetype<2.0.0,>=1.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.2.0)
-    Requirement already satisfied: fsspec>=2023.5.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2024.6.1)
-    Requirement already satisfied: httpx in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.27.0)
-    Requirement already satisfied: nest-asyncio<2.0.0,>=1.5.8 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.6.0)
-    Requirement already satisfied: networkx>=3.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (3.4.2)
-    Requirement already satisfied: nltk>3.8.1 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (3.9.1)
-    Requirement already satisfied: pillow>=9.0.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (10.4.0)
-    Requirement already satisfied: pydantic>=2.8.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2.10.4)
-    Requirement already satisfied: requests>=2.31.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2.32.3)
-    Requirement already satisfied: tenacity!=8.4.0,<10.0.0,>=8.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (8.2.3)
-    Requirement already satisfied: tiktoken>=0.3.3 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.7.0)
-    Requirement already satisfied: tqdm<5.0.0,>=4.66.1 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (4.66.5)
-    Requirement already satisfied: typing-inspect>=0.8.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.9.0)
-    Requirement already satisfied: wrapt in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.17.0)
-    Requirement already satisfied: aiohappyeyeballs>=2.3.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp<4.0.0,>=3.8.6->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2.4.4)
-    Requirement already satisfied: aiosignal>=1.1.2 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp<4.0.0,>=3.8.6->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.3.2)
-    Requirement already satisfied: attrs>=17.3.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp<4.0.0,>=3.8.6->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (23.2.0)
-    Requirement already satisfied: frozenlist>=1.1.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp<4.0.0,>=3.8.6->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.5.0)
-    Requirement already satisfied: multidict<7.0,>=4.5 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from aiohttp<4.0.0,>=3.8.6->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (6.0.4)
-    Requirement already satisfied: propcache>=0.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from aiohttp<4.0.0,>=3.8.6->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.2.1)
-    Requirement already satisfied: yarl<2.0,>=1.17.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from aiohttp<4.0.0,>=3.8.6->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.18.3)
-    Requirement already satisfied: MarkupSafe>=2.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from jinja2>=2.11.3->llama-cpp-python<0.3.0,>=0.2.32->llama-index-llms-llama-cpp) (3.0.2)
-    Requirement already satisfied: click in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from nltk>3.8.1->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (8.1.7)
-    Requirement already satisfied: joblib in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from nltk>3.8.1->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.4.2)
-    Requirement already satisfied: regex>=2021.8.3 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from nltk>3.8.1->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2024.5.15)
-    Requirement already satisfied: annotated-types>=0.6.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from pydantic>=2.8.0->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.6.0)
-    Requirement already satisfied: pydantic-core==2.27.2 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from pydantic>=2.8.0->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2.27.2)
-    Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from requests>=2.31.0->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (3.3.2)
-    Requirement already satisfied: idna<4,>=2.5 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from requests>=2.31.0->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (3.6)
-    Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from requests>=2.31.0->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2.2.1)
-    Requirement already satisfied: certifi>=2017.4.17 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from requests>=2.31.0->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (2024.12.14)
-    Requirement already satisfied: greenlet!=0.4.17 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from SQLAlchemy>=1.4.49->SQLAlchemy[asyncio]>=1.4.49->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (3.1.1)
-    Requirement already satisfied: colorama in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from tqdm<5.0.0,>=4.66.1->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.4.6)
-    Requirement already satisfied: mypy-extensions>=0.3.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from typing-inspect>=0.8.0->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.0.0)
-    Requirement already satisfied: marshmallow<4.0.0,>=3.18.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from dataclasses-json->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (3.25.1)
-    Requirement already satisfied: anyio in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (4.3.0)
-    Requirement already satisfied: httpcore==1.* in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.0.5)
-    Requirement already satisfied: sniffio in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (1.3.1)
-    Requirement already satisfied: h11<0.15,>=0.13 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from httpcore==1.*->httpx->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (0.14.0)
-    Requirement already satisfied: packaging>=17.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from marshmallow<4.0.0,>=3.18.0->dataclasses-json->llama-index-core<0.13.0,>=0.12.0->llama-index-llms-llama-cpp) (24.1)
-    Note: you may need to restart the kernel to use updated packages.
-    Requirement already satisfied: llama-index in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (0.12.10)
-    Requirement already satisfied: llama-index-agent-openai<0.5.0,>=0.4.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.4.1)
-    Requirement already satisfied: llama-index-cli<0.5.0,>=0.4.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.4.0)
-    Requirement already satisfied: llama-index-core<0.13.0,>=0.12.10 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.12.10.post1)
-    Requirement already satisfied: llama-index-embeddings-openai<0.4.0,>=0.3.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.3.1)
-    Requirement already satisfied: llama-index-indices-managed-llama-cloud>=0.4.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.6.3)
-    Requirement already satisfied: llama-index-llms-openai<0.4.0,>=0.3.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.3.13)
-    Requirement already satisfied: llama-index-multi-modal-llms-openai<0.5.0,>=0.4.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.4.2)
-    Requirement already satisfied: llama-index-program-openai<0.4.0,>=0.3.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.3.1)
-    Requirement already satisfied: llama-index-question-gen-openai<0.4.0,>=0.3.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.3.0)
-    Requirement already satisfied: llama-index-readers-file<0.5.0,>=0.4.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.4.3)
-    Requirement already satisfied: llama-index-readers-llama-parse>=0.4.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (0.4.0)
-    Requirement already satisfied: nltk>3.8.1 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index) (3.9.1)
-    Requirement already satisfied: openai>=1.14.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-agent-openai<0.5.0,>=0.4.0->llama-index) (1.58.1)
-    Requirement already satisfied: PyYAML>=6.0.1 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (6.0.1)
-    Requirement already satisfied: SQLAlchemy>=1.4.49 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from SQLAlchemy[asyncio]>=1.4.49->llama-index-core<0.13.0,>=0.12.10->llama-index) (2.0.36)
-    Requirement already satisfied: aiohttp<4.0.0,>=3.8.6 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (3.11.11)
-    Requirement already satisfied: dataclasses-json in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (0.6.7)
-    Requirement already satisfied: deprecated>=1.2.9.3 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (1.2.15)
-    Requirement already satisfied: dirtyjson<2.0.0,>=1.0.8 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (1.0.8)
-    Requirement already satisfied: filetype<2.0.0,>=1.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (1.2.0)
-    Requirement already satisfied: fsspec>=2023.5.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (2024.6.1)
-    Requirement already satisfied: httpx in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (0.27.0)
-    Requirement already satisfied: nest-asyncio<2.0.0,>=1.5.8 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (1.6.0)
-    Requirement already satisfied: networkx>=3.0 in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (3.4.2)
-    Requirement already satisfied: numpy in c:\users\nboateng\appdata\roaming\python\python312\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (1.26.4)
-    Requirement already satisfied: pillow>=9.0.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (10.4.0)
+    Requirement already satisfied: llama-index-embeddings-huggingface in c:\appdata\local\anaconda3\lib\site-packages (0.5.0)
+    Requirement already satisfied: huggingface-hub>=0.19.0 in c:\appdata\local\anaconda3\lib\site-packages (from huggingface-hub[inference]>=0.19.0->llama-index-embeddings-huggingface) (0.27.0)
+    Requirement already satisfied: llama-index-core<0.13.0,>=0.12.0 in c:\appdata\local\anaconda3\lib\site-packages (from llama-index-embeddings-huggingface) (0.12.10.post1)
+    Requirement already satisfied: sentence-transformers>=2.6.1 in c:\appdata\roaming\python\python312\site-packages (from llama-index-embeddings-huggingface) (3.3.1)
+ 
     Requirement already satisfied: pydantic>=2.8.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (2.10.4)
     Requirement already satisfied: requests>=2.31.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (2.32.3)
     Requirement already satisfied: tenacity!=8.4.0,<10.0.0,>=8.2.0 in c:\users\nboateng\appdata\local\anaconda3\lib\site-packages (from llama-index-core<0.13.0,>=0.12.10->llama-index) (8.2.3)
@@ -1414,7 +1273,7 @@ from llama_index.core.llms import ChatMessage
 #from groq import Groq
 import os
 
-load_dotenv("C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/Groq_api/.env")  # take environment variables from .env.
+load_dotenv("C:/LLM/Groq_api/.env")  # take environment variables from .env.
 
 
 llm = Groq(model="llama3-70b-8192", api_key= os.getenv('Groq_API_KEY'))
@@ -1444,7 +1303,7 @@ from groq import Groq
 import os
 from dotenv import load_dotenv
 
-load_dotenv("C:/Users/nboateng/OneDrive - Nice Systems Ltd/Documents/Research/LLM/Groq_api/.env")  # take environment variables from .env.
+load_dotenv("C:/LLM/Groq_api/.env")  # take environment variables from .env.
 
 client = Groq(
     api_key=os.environ.get('Groq_API_KEY'),
